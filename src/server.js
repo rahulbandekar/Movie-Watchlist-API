@@ -1,4 +1,6 @@
 import express from "express";
+import cors from "cors";
+import cookieParser from "cookie-parser";
 import { config } from "dotenv";
 import { connectDB, disconnectDB, prisma } from "./config/db.js";
 // Import routes
