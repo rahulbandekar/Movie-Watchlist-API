@@ -11,7 +11,8 @@ const movies = [
     releaseYear: 1999,
     genres: ["Action", "Sci-Fi"],
     runtime: 136,
-    posterUrl: "https://example.com/matrix.jpg",
+    posterUrl:
+      "https://image.tmdb.org/t/p/w500/f89U3ADr1oiB1s9GkdPOEpXUk5H.jpg",
     createdBy: userId,
   },
   {
@@ -21,7 +22,8 @@ const movies = [
     releaseYear: 2010,
     genres: ["Action", "Sci-Fi", "Thriller"],
     runtime: 148,
-    posterUrl: "https://example.com/inception.jpg",
+    posterUrl:
+      "https://image.tmdb.org/t/p/w500/9gk7adHYeDvHkCSEqAvQNLV5Uge.jpg",
     createdBy: userId,
   },
   {
@@ -30,7 +32,8 @@ const movies = [
     releaseYear: 2008,
     genres: ["Action", "Crime", "Drama"],
     runtime: 152,
-    posterUrl: "https://example.com/darkknight.jpg",
+    posterUrl:
+      "https://image.tmdb.org/t/p/w500/qJ2tW6WMUDux911r6m7haRef0WH.jpg",
     createdBy: userId,
   },
   {
@@ -39,7 +42,8 @@ const movies = [
     releaseYear: 1994,
     genres: ["Crime", "Drama"],
     runtime: 154,
-    posterUrl: "https://example.com/pulpfiction.jpg",
+    posterUrl:
+      "https://image.tmdb.org/t/p/w500/d5iIlFn5s0ImszYzBPb8JPIfbXD.jpg",
     createdBy: userId,
   },
   {
@@ -48,7 +52,8 @@ const movies = [
     releaseYear: 2014,
     genres: ["Adventure", "Drama", "Sci-Fi"],
     runtime: 169,
-    posterUrl: "https://example.com/interstellar.jpg",
+    posterUrl:
+      "https://image.tmdb.org/t/p/w500/gEU2QniE6E77NI6lCU6MxlNBvIx.jpg",
     createdBy: userId,
   },
   {
@@ -57,7 +62,8 @@ const movies = [
     releaseYear: 1994,
     genres: ["Drama"],
     runtime: 142,
-    posterUrl: "https://example.com/shawshank.jpg",
+    posterUrl:
+      "https://image.tmdb.org/t/p/w500/q6y0Go1tsGEsmtFryDOJo3dEmqu.jpg",
     createdBy: userId,
   },
   {
@@ -67,7 +73,8 @@ const movies = [
     releaseYear: 1999,
     genres: ["Drama"],
     runtime: 139,
-    posterUrl: "https://example.com/fightclub.jpg",
+    posterUrl:
+      "https://image.tmdb.org/t/p/w500/pB8BM7pdSp6B6Ih7QZ4DrQ3PmJK.jpg",
     createdBy: userId,
   },
   {
@@ -77,7 +84,8 @@ const movies = [
     releaseYear: 1994,
     genres: ["Drama", "Romance"],
     runtime: 142,
-    posterUrl: "https://example.com/forrestgump.jpg",
+    posterUrl:
+      "https://image.tmdb.org/t/p/w500/saHP97rTPS5eVVmrUjDsWlH8XjG.jpg",
     createdBy: userId,
   },
   {
@@ -87,7 +95,8 @@ const movies = [
     releaseYear: 1972,
     genres: ["Crime", "Drama"],
     runtime: 175,
-    posterUrl: "https://example.com/godfather.jpg",
+    posterUrl:
+      "https://image.tmdb.org/t/p/w500/3bhkrj58Vtu7enYsRolD1fZdja1.jpg",
     createdBy: userId,
   },
   {
@@ -96,7 +105,8 @@ const movies = [
     releaseYear: 1990,
     genres: ["Biography", "Crime", "Drama"],
     runtime: 146,
-    posterUrl: "https://example.com/goodfellas.jpg",
+    posterUrl:
+      "https://image.tmdb.org/t/p/w500/aKuFiU82s5ISJpGZp7YkIr3kCUd.jpg",
     createdBy: userId,
   },
 ];
