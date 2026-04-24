@@ -1,5 +1,5 @@
 import express from "express";
-import { addToWatchlist, removefromWatchlist, updateWatchlistItem,  } from "../controllers/watchlistController.js";
+import { addToWatchlist, removefromWatchlist, updateWatchlistItem, getUserWatchlist } from "../controllers/watchlistController.js";
 import { authMiddleware } from "../middleware/authMiddleware.js";
 import { validateRequest } from "../middleware/validateRequest.js";
 import { addToWatchlistSchema, updateWatchlistSchema } from "../validators/watchlistValidators.js";
@@ -7,6 +7,8 @@ import { addToWatchlistSchema, updateWatchlistSchema } from "../validators/watch
 const router = express.Router();
 
 router.use(authMiddleware); // Apply authentication middleware to all routes in this router
+
+router.get("/", getUserWatchlist);
 
 router.post("/", validateRequest(addToWatchlistSchema), addToWatchlist);
 

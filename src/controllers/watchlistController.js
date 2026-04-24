@@ -1,5 +1,40 @@
 import { prisma } from "../config/db.js";
 
+const getUserWatchlist = async (req, res) => {
+  try {
+    const userId = req.user.id;
+    
+    const watchlist = await prisma.watchlistItem.findMany({
+      where: { userId },
+      include: {
+        movie: {
+          select: {
+            id: true,
+            title: true,
+            overview: true,
+            releaseYear: true,
+            genres: true,
+            runtime: true,
+            posterUrl: true,
+          }
+        }
+      },
+      orderBy: {
+        createdAt: 'desc'
+      }
+    });
+
+    res.status(200).json({
+      status: "success",
+      results: watchlist.length,
+      data: watchlist
+    });
+  } catch (error) {
+    console.error(`Error fetching watchlist: ${error.message}`);
+    res.status(500).json({ message: "Internal server error" });
+  }
+};
+
 const addToWatchlist = async (req, res) => {
   const { movieId, status, rating, notes } = req.body;
 
@@ -109,4 +144,4 @@ const removefromWatchlist = async (req, res) => {
     
 };
 
-export { addToWatchlist, removefromWatchlist, updateWatchlistItem };
+export { addToWatchlist, removefromWatchlist, updateWatchlistItem, getUserWatchlist };
